@@ -1,0 +1,17 @@
+server:
+  port: 8088
+
+Spring:
+  application:
+    name: REST-COMPLEX-CRUD
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/User_Management
+    username: root
+    password: rootroot
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    database-platform : org.hibernate.dialect.MySQL5Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
